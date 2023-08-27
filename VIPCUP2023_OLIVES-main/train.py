@@ -52,6 +52,7 @@ def train_supervised(train_loader, model,criterion, optimizer, epoch, opt):
         if (idx + 1) % opt.print_freq == 0:
             print('Train: [{0}][{1}/{2}]\t'.format(
                 epoch, idx + 1, len(train_loader)))
+            print(loss.item())
 
             sys.stdout.flush()
 
